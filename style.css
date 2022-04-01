@@ -1,18 +1,27 @@
-.gennaro{
-    color:white;
-}
-#ciro{
+.hero-section{
 
 }
-p{
+.hero-logo-section{
 
 }
-main{
-
+.hero-scritta p{
+    font-weight: bold;
+    color: black;
+    width: 400px;
+    border:1px solid black;
 }
-body{
-
+.hero-bottoni{
+border: 1px solid black;
+width: 400px;
 }
-.gennaro main{
+#button-riproduci{
+    color:red;
+    background: yellow;
+}
+#button-info{
+    color:black;
+    background: gray;
+}
+.hero-bottone-dx{
 
 }
