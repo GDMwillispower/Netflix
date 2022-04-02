@@ -1,5 +1,8 @@
+.hero-logo-scritte{
+    height: 200px;
+}
 .hero-section{
-
+    padding-top: 15%;
 }
 .hero-logo-section{
 
@@ -15,8 +18,17 @@ border: 1px solid black;
 width: 400px;
 }
 #button-riproduci{
+    font-weight: bold;
     color:red;
     background: yellow;
+    padding: 10px;
+    padding-left:20px ;
+    padding-right:20px;
+    border: 0.5px solid black;
+    border-radius: 9px;
+}
+#button-riproduci:hover{
+    cursor: pointer;
 }
 #button-info{
     color:black;
