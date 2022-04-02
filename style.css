@@ -6,6 +6,10 @@
     background-color: black;
 }
 
+.hero-logo {
+    height: 120px;
+}
+
 .hero-text {
     font-family: Helvetica, Arial, sans-serif;
     font-size: medium;
