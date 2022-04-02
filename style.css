@@ -1,39 +1,45 @@
-.hero-logo-scritte{
-    height: 200px;
+.hero-section {
+    padding-left: 5%;
+    padding-top: 15%;
+    background-image: url(assets/pictures/Hero-background-team7.webp);
+    height: 470px;
+    background-color: black;
 }
-.hero-section{
-    padding-top: 15%; background-image: url(assets/pictures/Hero-background-team7.webp); height: 470px; background-color: black;
-}
-.hero-logo-section{
 
-}
-.hero-scritta p{
+.hero-text {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: medium;
     font-weight: bold;
     color: white;
     width: 400px;
-    border:1px solid black;
 }
-.hero-bottoni{
-border: 1px solid black;
-width: 400px;
+
+.hero-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-#button-riproduci{
+
+#button-play, #button-info {
+    font-size: medium;
     font-weight: bold;
-    color:red;
-    background: yellow;
-    padding: 10px;
-    padding-left:20px ;
-    padding-right:20px;
+    color: black;
+    background: white;
+    height: 35px;
+    width: 100px;
     border: 0.5px solid black;
-    border-radius: 9px;
+    border-radius: 5px;
 }
-#button-riproduci:hover{
+
+#button-play:hover {
     cursor: pointer;
 }
-#button-info{
-    color:black;
-    background: gray;
+
+#button-info {
+    color: white;
+    background: grey;
 }
-.hero-bottone-dx{
+
+.hero-button-dx {
 
 }
