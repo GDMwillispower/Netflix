@@ -2,14 +2,14 @@
     height: 200px;
 }
 .hero-section{
-    padding-top: 15%;
+    padding-top: 15%; background-image: url(assets/pictures/Hero-background-team7.webp); height: 470px; background-color: black;
 }
 .hero-logo-section{
 
 }
 .hero-scritta p{
     font-weight: bold;
-    color: black;
+    color: white;
     width: 400px;
     border:1px solid black;
 }
