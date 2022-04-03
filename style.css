@@ -10,20 +10,16 @@
     height: 700px;
     max-width: 100%;
 }
-
 .hero-logo {
     height: 40%;
 }
-
 .hero-text {
     margin-left: 20px;
     font-family: Helvetica, Arial, sans-serif;
     font-size: large;
-    font-weight: ;
     color: white;
     width: 500px;
 }
-
 .hero-buttons {
     padding-top: 20px;
     padding-left: 20px;
@@ -31,16 +27,16 @@
     flex-direction: row;
     justify-content: space-between;
 }
-
 #button-play, #button-info {
-    font-size: medium;
+    font-size: 15px;
     font-weight: bold;
     color: black;
     background: white;
     height: 35px;
-    width: 100px;
+    width: 120px;
     border: 0.5px solid black;
-    border-radius: 5px;
+    border-radius: 4px;
+    border: none;
 }
 
 #button-play:hover, #button-info:hover {
@@ -50,8 +46,38 @@
 #button-info {
     color: white;
     background: grey;
+    margin-left: 15px;
+    opacity: 90%;
 }
-
-.hero-button-dx {
-
+#button-info:hover {
+    cursor: pointer;
+    background-color: rgba(236, 236, 236,.4);
 }
+#button-play:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255,.8);
+}
+#symbol1{
+font-size: 20px !important;
+margin-right: 7px;
+font-style: Bebas Neue;
+}
+#symbol2{
+    font-size: 20px !important;
+    margin-right: 7px;
+    font-style: Bebas Neue;
+}
+#button-replay{
+    font-size: 20px;
+    color: white;
+    background: transparent;
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 100%;
+    margin-right: 130px;
+}
+#button-replay:hover{
+   cursor: pointer;
+}
+/*Fine Hero Section Alessio I. Gabriele M.*/
