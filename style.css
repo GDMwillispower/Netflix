@@ -1,24 +1,32 @@
+* {
+    margin: 0;
+}
+
 .hero-section {
-    padding-left: 5%;
-    padding-top: 15%;
+    padding-left: 30px;
+    padding-top: 100px;
     background-image: url(assets/pictures/Hero-background-team7.webp);
-    height: 470px;
-    background-color: black;
+    background-size: cover;
+    height: 700px;
+    max-width: 100%;
 }
 
 .hero-logo {
-    height: 120px;
+    height: 40%;
 }
 
 .hero-text {
+    margin-left: 20px;
     font-family: Helvetica, Arial, sans-serif;
-    font-size: medium;
-    font-weight: bold;
+    font-size: large;
+    font-weight: ;
     color: white;
-    width: 400px;
+    width: 500px;
 }
 
 .hero-buttons {
+    padding-top: 20px;
+    padding-left: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -35,7 +43,7 @@
     border-radius: 5px;
 }
 
-#button-play:hover {
+#button-play:hover, #button-info:hover {
     cursor: pointer;
 }
 
