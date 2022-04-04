@@ -40,10 +40,6 @@
     border: none;
 }
 
-#button-play:hover, #button-info:hover {
-    cursor: pointer;
-}
-
 #button-info {
     color: white;
     background: grey;
