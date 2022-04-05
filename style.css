@@ -1,1 +1,16 @@
+img[class^="card-button"] {
+width: 40px;
+height: 40px;
+}
 
+.card-content-buttons {
+display: flex;
+}
+
+.card-button-dropdown {
+    align-items: right;
+}
+
+/*.card-content {
+    display: none;
+}*/
