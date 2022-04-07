@@ -1,0 +1,55 @@
+:root {
+box-sizing: border-box;
+margin:0;
+padding:0;
+}
+
+body {
+font-size: 10px;
+}
+
+div[class^="card-button"] {
+    width: 40px;
+    height: 40px;
+}
+    
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #181818;
+    width: 20rem;
+    border-radius: 5px;
+}
+.card-img {
+    width: 100%;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content-buttons {
+    display: flex;
+    width: 100%;
+    justify-content:flex-start;
+}
+
+.card-b-t {
+    margin-inline: 5px;
+}
+
+.card-b-t-dropdown{
+    display: flex;
+    width: 100%;
+    justify-content:flex-end;
+}
+
+.card-button-dropdown {
+    display: flex;
+    justify-content: flex-end;
+}
+    
+.card-hide {
+    display: none;
+} 
