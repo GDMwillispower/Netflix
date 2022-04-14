@@ -13,7 +13,7 @@
     
     <title>Netflix</title>
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="cards.css"/>
 </head>
 
 <body>
@@ -37,19 +37,49 @@
                 <!--Prima card-->
                 <div class="card">
                     <div class="card-header">
-                        <img src="assets/cards-images/Img1-Bridgerton.jpeg" alt="Preview Bridgerton"/>
-                        <video>
+                        <img src="assets/cards-images/Img1-Bridgerton.jpeg" alt="Preview Bridgerton" class="card-img"/>
+                        <video class="card-hide">
                             <source src="assets/cards-videos/card1-bridgerton.mp4" type="video/mp4" autoplay/>
                         </video>
                     </div>
-                    <div class="card-content">
+                    <div class="card-content ">
                         <div class="card-content-buttons">
-                            <img src="assets/buttons-svg/play-button.svg" alt="Button-play" class="card-button-play"/>
-                            <img src="assets/buttons-svg/plus-button.svg" alt="Button-plus" class="card-button-plus"/>
-                            <img src="assets/buttons-svg/dislike-button.svg" alt="Button-dislike" class="card-button-dislike"/>
-                            <img src="assets/buttons-svg/like-button.svg" alt="Button-like" class="card-button-like"/>
-                            <img src="assets/buttons-svg/adoro-button.svg" alt="Button-adoro" class="card-button-adoro"/>
-                            <img src="assets/buttons-svg/drop-button.svg" alt="Button-dropdown" class="card-button-dropdown"/>
+                            <div class="card-b-t">
+                                <span class="card-tooltip"></span> 
+                                <div class="card-button-play">
+                                    <img src="assets/buttons-svg/play-button.svg" alt="Button-play" />
+                                </div>
+                            </div>
+                            <div class="card-b-t">
+                                <span class="card-tooltip"></span>
+                                <div class="card-button-plus">
+                                    <img src="assets/buttons-svg/plus-button.svg" alt="Button-plus" />
+                                </div>
+                            </div>
+                            <div class="card-b-t">
+                                <span class="card-tooltip"></span>
+                                <div class="card-button-dislike">
+                                    <img src="assets/buttons-svg/dislike-button.svg" alt="Button-dislike" />
+                                </div>
+                            </div>
+                            <div class="card-b-t">
+                                <span class="card-tooltipe"></span>
+                                <div class="card-button-like">
+                                    <img src="assets/buttons-svg/like-button.svg" alt="Button-like" />
+                                </div>
+                            </div>
+                            <div class="card-b-t">
+                                <span class="card-tooltipe"></span>
+                                <div class="card-button-adoro">
+                                    <img src="assets/buttons-svg/adoro-button.svg" alt="Button-adoro" />
+                                </div>
+                            </div>
+                            <div class="card-b-t card-b-t-dropdown">
+                                <span class="card-tooltipe"></span>
+                                <div class="card-button-dropdown">
+                                    <img src="assets/buttons-svg/drop-button.svg" alt="Button-dropdown" />
+                                </div>
+                            </div>
                         </div>
                         <div class="card-content-info">
                             <h4>99% compatibile</h4>
