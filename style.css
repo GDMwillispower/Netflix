@@ -8,38 +8,57 @@
     padding-top: 100px;
     background-image: url(assets/pictures/Hero-background-team7.webp);
     background-size: cover;
-    height: 700px;
+    height: 70vh;
+    width: 100vw;
     max-width: 100%;
+    border: 1px solid white;
 }
 .hero-logo {
     height: 40%;
+    width: 100%;
 }
 .hero-text {
-    margin-left: 20px;
     font-family: Helvetica, Arial, sans-serif;
-    font-size: large;
     color: white;
-    width: 500px;
+    width: 20%;
+    margin-left: 2%;
+    margin-top: -3%;
 }
+
 .hero-buttons {
     padding-top: 20px;
-    padding-left: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
+    margin-left: 2%;
+}
+p, button , #symbol1 , #symbol2{
+    font-size: 1vw;
+}
+.responsive{
+    width:40%;
 }
 #button-play, #button-info {
-    font-size: 15px;
     font-weight: bold;
     color: black;
     background: white;
-    height: 35px;
-    width: 120px;
+    height: 80%;
+    width: 100%;
     border: 0.5px solid black;
     border-radius: 4px;
     border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10% 30%;
 }
-
+.hero-buttons-sx{
+    display: flex;
+    flex-direction: row;
+    /* width: 20%; */
+    height: auto;
+}
 #button-info {
     color: white;
     background: grey;
@@ -55,24 +74,22 @@
     background-color: rgba(255, 255, 255,.8);
 }
 #symbol1{
-font-size: 20px !important;
 margin-right: 7px;
 font-style: Bebas Neue;
 }
 #symbol2{
-    font-size: 20px !important;
     margin-right: 7px;
     font-style: Bebas Neue;
 }
 #button-replay{
-    font-size: 20px;
     color: white;
     background: transparent;
-    height: 40px;
-    width: 40px;
     border: 1px solid white;
     border-radius: 100%;
     margin-right: 130px;
+}
+.hero-button-dx{
+    border:1px solid white;
 }
 #button-replay:hover{
    cursor: pointer;
