@@ -8,48 +8,141 @@ body {
 font-size: 10px;
 }
 
-div[class^="card-button"] {
-    width: 40px;
-    height: 40px;
+#section {
+    width: 100vw;
 }
-    
+
+.container-cards {
+width: 100%;
+}
+
 .card {
     display: flex;
     flex-direction: column;
     background-color: #181818;
-    width: 20rem;
-    border-radius: 5px;
+    width: 15rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
 }
-.card-img {
-    width: 100%;
-}
+        .card-header {
+            display: flex;
+            width: 100%;
+        }
 
-.card-content {
-    display: flex;
-    flex-direction: column;
-}
+                .card-header img {
+                    display: flex;
+                    width: 100%;
+                }
 
-.card-content-buttons {
-    display: flex;
-    width: 100%;
-    justify-content:flex-start;
-}
+                .card-header video {
+                    display: flex;
+                    width: 100%;
+                }
 
-.card-b-t {
-    margin-inline: 5px;
-}
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+        }
 
-.card-b-t-dropdown{
-    display: flex;
-    width: 100%;
-    justify-content:flex-end;
-}
+                .card-content-buttons {
+                    display: flex;
+                    width: 100%;
 
-.card-button-dropdown {
-    display: flex;
-    justify-content: flex-end;
-}
-    
+                    justify-content:flex-start;
+                }
+
+                        .card-b-t {
+                            display: flex;
+                            /* margin-inline: 5px; */
+                            margin: 3%;
+                            height: 1.5rem;
+                            /* width: 4rem;  */
+                        }
+                                .card-tooltip {
+                                    display: flex;
+                                }
+
+                                div[class^="card-button"] {
+                                    display: flex;
+                                    /* width: 1.5rem;
+                                    height: 1.5rem; */
+                                    border-radius: 50%;
+                                    border: 1px solid grey;
+                                                            
+                                }
+                                
+                                        div[class^="card-button"] img {
+                                            display: flex;
+                                            /* width: 100%; */
+                                            /* object-fit: cover; */
+                                        }
+                        .card-container-button-like {
+                            display: flex;
+                            position: relative;
+                            /* width: 100%;
+                            height: 12%; */
+                            background-color: aqua;
+                            margin: 3%;
+                        }
+                                .card-b-t-dislike {
+                                    display: flex;
+                                    /* width: 1.5rem;
+                                    height: 1.5rem; */
+                                    position: absolute;
+                                    /* display: none; */
+                                    /* margin: 3%; */
+                                    
+                                }   
+                                
+                                .card-b-t-like {
+                                    display: flex;
+                                    /* width: 1.5rem;
+                                    height: 1.5rem; */
+                                    position: absolute;
+                                    
+                                }
+
+                                .card-b-t-adoro {
+                                    display: flex;
+                                    position: absolute;
+                                    /* width: 1.5rem;
+                                    height: 1.5rem; */
+                                    /* display: none; */
+                                    /* margin: 3%; */
+                                }
+
+                                .card-container-button-like:hover .card-b-t-adoro {
+                                    transform: translate(20px);
+                                    display: flex;
+                                }
+
+                                .card-container-button-like:hover .card-b-t-dislike {
+                                    transform: translate(-20px);
+                                    display: flex;
+                                }
+
+                                        .card-b-t-dropdown {
+                                            display: flex;
+                                            /* width: 100%; */
+                                            /* justify-content:flex-end; */
+                                            margin-left: auto;
+                                        }
+                                
+
+                .card-content-info {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                }
+
+                .card-content-features {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                }
+
 .card-hide {
     display: none;
 } 
