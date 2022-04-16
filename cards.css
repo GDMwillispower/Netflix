@@ -14,19 +14,40 @@ font-size: 10px;
 
 .container-cards {
 width: 100%;
+display: flex;
+margin-left: 5%;
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    background-color: #181818;
+    /* background-color: #181818; */
     width: 13rem;
     border-radius: 0.5rem;
-    overflow: hidden;
+    margin: 0.1%;
+    min-width: 10rem;
+}
+
+    .card:hover{
+        transform: scale(1.5);
+    }
+
+.card:hover .card-header .card-img{
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.card:hover .card-content{
+    display: flex;
+    flex-direction: column;
+    background-color: #181818;
+    border-bottom-left-radius:0.5rem;
+    border-bottom-right-radius: 0.5rem;
 }
         .card-header {
             display: flex;
             width: 100%;
+            position: relative;
         }
 
                 .card-header img {
@@ -35,13 +56,19 @@ width: 100%;
                 }
 
                 .card-header video {
-                    display: flex;
+                    display: none;
                     width: 100%;
+                    position: absolute;
+                    border-top-left-radius: 0.5rem;
+                    border-top-right-radius: 0.5rem;
+                }
+
+                .card:hover .card-header .card-hide{
+                    display: flex;
                 }
 
         .card-content {
-            display: flex;
-            flex-direction: column;
+            display: none;
             width: 100%;
             height: auto;
             padding: 0.5rem;
@@ -60,6 +87,7 @@ width: 100%;
                             position: relative;
                             margin: 0.2rem;
                         }
+                            
                                 .card-tooltip {
                                     display: none;
                                     position: absolute;
@@ -69,7 +97,8 @@ width: 100%;
                                     padding: 0.1rem;
                                     z-index: 1;
                                     bottom: 120%;
-                                    left: -30%;
+                                    /* left: -30%; */
+                                    width: max-content;
                                 }
 
                                 .card-tooltip::after {
@@ -81,9 +110,6 @@ width: 100%;
                                     border-width: 5px;
                                     border-style: solid;
                                     border-color: white transparent transparent transparent;
-                                }
-                                .card-button-plus .card-tooltip {
-
                                 }
 
                                 .card-button-play {
@@ -104,9 +130,21 @@ width: 100%;
                                     border-radius: 50%;
                                 }
                                 
+
                                         div[class^="card-button"] img {
                                             display: flex;
                                         }
+                                        
+                                        div[class^="card-button"] img:hover{
+                                            background-color: grey;
+                                            border-radius: 50%;
+                                        }
+                        .card-b-t-plus:hover .card-tooltip{
+                            display: flex;
+                            left: -139%;
+                            bottom: 140%;
+                        }
+
                         .card-container-button-like {
                             display: flex;
                             position: relative;
@@ -117,15 +155,31 @@ width: 100%;
                                     position: absolute;
                                     display: none;
                                 }   
-                                
+                                    .card-b-t-dislike:hover .card-tooltip{
+                                        display: flex;
+                                        left: -60%; 
+                                        bottom: 140%;
+                                        
+                                    }
+
                                 .card-b-t-like {
                                     position: absolute;
                                 }
-
+                                    .card-b-t-like:hover .card-tooltip{
+                                        display: flex;
+                                        left: -10%;
+                                        bottom: 120%;
+                                    }
+                                
                                 .card-b-t-adoro {
                                     display: none;
                                     position: absolute;
                                 }
+                                    .card-b-t-adoro:hover .card-tooltip{
+                                        display: flex;
+                                        bottom: 140%;
+                                        left: -10%;
+                                    }
 
                                         .card-container-button-like:hover {
                                             display: flex;
@@ -163,7 +217,11 @@ width: 100%;
                                     display: flex;
                                     margin-left: auto;
                                 }
-                                
+                                .card-b-t-dropdown:hover .card-tooltip{
+                                    display: flex;
+                                    bottom: 140%;
+                                    left: -65%;
+                                }
 
                 .card-content-info {
                     display: flex;
@@ -199,6 +257,4 @@ width: 100%;
                     color: white;
                 }
 
-.card-hide {
-    display: none;
-} 
+
