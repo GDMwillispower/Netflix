@@ -1,3 +1,9 @@
+.hero{
+    height: 500px;
+    width: 100vw;
+    background-color: #46d369;
+}
+
 :root {
     --netflix-black:         #000000;
     --netflix-dark-grey:     #696969;
@@ -22,12 +28,15 @@ padding:0;
 body {
 font-size: 10px;
 overflow-x: hidden;
+background-color: var(--netflix-bg);
 }
 
 #cards-section {
     width: 100vw;
-    background-color: var(--netflix-bg);
+    position: relative;
+    margin-top: -9.5rem;
     overflow-x: hidden;
+    padding-top: 2rem;
 }
 
 #cards-section h2{
