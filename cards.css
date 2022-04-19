@@ -34,7 +34,7 @@ background-color: var(--netflix-bg);
 #cards-section {
     width: 100vw;
     position: relative;
-    margin-top: -9.5rem;
+    margin-top: -8rem;
     overflow-x: hidden;
     padding-top: 2rem;
 }
@@ -46,8 +46,9 @@ background-color: var(--netflix-bg);
 .container-cards {
 width: max-content;
 display: flex;
-margin-left: 3%;
-height: 8rem;
+height: 8.5rem;
+padding-left: 3%;
+background-image: linear-gradient(to bottom, #14141400,#141414 35%);
 }
 
 .container-cards-title{
@@ -59,12 +60,13 @@ height: 8rem;
     display: flex;
     flex-direction: column;
     width: 18vw;
-    border-radius: 0.5rem;
+    border-radius: 0.2rem;
     margin: 0.1%;
     min-width: 10rem;
     transform: scale(1);
     transition-duration: 500ms;
     height: min-content;
+    /* visibility: hidden; */
 }
 
     .container-cards > :first-child:hover{
@@ -81,8 +83,8 @@ height: 8rem;
     }
 
 .card:hover .card-header .card-img{
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.2rem;
+    border-top-right-radius: 0.2rem;
     visibility: hidden;
 }
 
@@ -90,8 +92,8 @@ height: 8rem;
     display: flex;
     flex-direction: column;
     background-color: #181818;
-    border-bottom-left-radius:0.5rem;
-    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius:0.2rem;
+    border-bottom-right-radius: 0.2rem;
 }
         .card-header {
             display: flex;
@@ -108,8 +110,8 @@ height: 8rem;
                     display: none;
                     width: 100%;
                     position: absolute;
-                    border-top-left-radius: 0.5rem;
-                    border-top-right-radius: 0.5rem;
+                    border-top-left-radius: 0.2rem;
+                    border-top-right-radius: 0.2rem;
                 }
 
                 .card:hover .card-header .card-hide{
