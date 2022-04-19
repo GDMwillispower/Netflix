@@ -1,3 +1,18 @@
+:root {
+    --netflix-black:         #000000;
+    --netflix-dark-grey:     #696969;
+    --netflix-grey:          #808080;
+    --netflix-light-grey:    #aaaaaa;
+    --netflix-dark-white:    #f8f8f8;
+    --netflix-white:         #ffffff;
+    --netflix-dark-red:      #b9090b;
+    --netflix-red:           #e50914;
+    --netflix-bg:            #141414;
+    --netflix-opacity-bg:    rgba(20, 20, 20, 0.5);
+    --netflix-opacity-white: rgba(0, 0, 0, 0.5);
+    --netflix-gradient-navbar: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0,0,0,0) 100%);
+}
+
 * {
 box-sizing: border-box;
 margin:0;
@@ -6,34 +21,41 @@ padding:0;
 
 body {
 font-size: 10px;
+overflow-x: hidden;
 }
 
 #cards-section {
     width: 100vw;
-    background-color: #1a1a1a;
+    background-color: var(--netflix-bg);
+    overflow-x: hidden;
+}
+
+#cards-section h2{
+    padding-block: 1%;
 }
 
 .container-cards {
-width: 100%;
+width: max-content;
 display: flex;
 margin-left: 3%;
-height: 10rem;
+height: 7rem;
 }
 
 .container-cards-title{
     margin-left: 3%;
-    color: white;
+    color: #e5e5e5;
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    width: 13rem;
+    width: 18vw;
     border-radius: 0.5rem;
     margin: 0.1%;
     min-width: 10rem;
     transform: scale(1);
     transition-duration: 500ms;
+    height: min-content;
 }
 
     .container-cards > :first-child:hover{
@@ -91,6 +113,7 @@ height: 10rem;
             width: 100%;
             height: auto;
             padding: 0.5rem;
+            margin-top: -2px;
         }
 
                 .card-content-buttons {
@@ -110,8 +133,8 @@ height: 10rem;
                                 .card-tooltip {
                                     display: none;
                                     position: absolute;
-                                    color: black;
-                                    background-color: white;
+                                    color: var(--netflix-black);
+                                    background-color: var(--netflix-dark-white);
                                     border-radius: 0.2rem;
                                     padding: 0.1rem;
                                     z-index: 1;
@@ -133,27 +156,27 @@ height: 10rem;
 
                                 .card-button-play {
                                     border: 1.5px solid white;
-                                    background-color: white;
+                                    background-color: var(--netflix-dark-white);
                                 }
                                     .card-button-play img{
                                         width: 55%;
                                     }
                                     .card-button-play:hover{
-                                        background-color: whitesmoke;
+                                        background-color: rgb(199, 199, 199);
                                     }
                                     .card-content-buttons .card-b-t .card-button-play:hover img{
-                                        background-color: whitesmoke;
+                                        background-color: rgb(199, 199, 199);
                                     }
 
                                     .card-content-buttons .card-b-t .card-button-plus:hover{
-                                        background-color: grey;
+                                        background-color: var(--netflix-grey);
                                         border: 1px solid white;
                                     }
 
                                 .card-button-plus, 
                                 .card-button-dropdown,
                                 .card-button-like {
-                                border: 1.5px solid grey;
+                                border: 1.5px solid var(--netflix-grey);
                                 }
 
                                 div[class^="card-button"] {
@@ -170,7 +193,7 @@ height: 10rem;
                                         }
                                         
                                         div[class^="card-button"] img:hover{
-                                            background-color: grey;
+                                            background-color: var(--netflix-grey);
                                             border-radius: 50%;
                                         }
                         .card-b-t-plus:hover .card-tooltip{
@@ -269,8 +292,8 @@ height: 10rem;
                                     left: -65%;
                                 }
                                     .card-content-buttons .card-b-t .card-button-dropdown:hover{
-                                        background-color: grey;
-                                        border: 1px solid white;
+                                        background-color: var(--netflix-grey);
+                                        border: 1px solid var(--netflix-dark-white);
                                     }
 
                 .card-content-info {
@@ -280,7 +303,7 @@ height: 10rem;
                     line-height: 1rem;
                 }
                 .card-content-info span {
-                    border: 1px solid grey;
+                    border: 1px solid var(--netflix-grey);
                     margin-inline: 0.2rem 0.2rem 0.2rem 0;
                     padding: 0 0.3rem;
                 }
@@ -289,7 +312,7 @@ height: 10rem;
                 }
 
                 .card-content-info p {
-                    color: white;
+                    color: var(--netflix-dark-white);
                 }
 
                 .card-content-features {
@@ -300,11 +323,11 @@ height: 10rem;
                     
                 }
                 .card-content-features p {
-                    color: grey;
+                    color: var(--netflix-grey);
                 }
 
                 .card-content-features span {
-                    color: white;
+                    color: var(--netflix-dark-white);
                 }
 
 
