@@ -353,12 +353,12 @@ background-image: linear-gradient(to bottom ,#14141400 0%, #141414ea 31%,#141414
                 }
                 .card-content-features p {
                     color: var(--netflix-grey);
-                    font-size: 0.9rem;
+                    font-size: 1rem;
                 }
 
                 .card-content-features span {
                     color: var(--netflix-dark-white);
-                    font-size: 0.9rem;
+                    font-size: 1rem;
                 }
 
 @media (max-width: 1024px) {
