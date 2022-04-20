@@ -314,4 +314,10 @@ background-image: linear-gradient(to bottom, #14141400,#141414 35%);
                     font-size: 0.9rem;
                 }
 
+@media (max-width: 767px) {
+    #cards-section {
+        margin-top: 1rem;
+    }
+}
+
 
