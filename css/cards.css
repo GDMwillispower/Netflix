@@ -14,7 +14,7 @@
 .container-cards {
 width: max-content;
 display: flex;
-height: 15rem;
+height: 18rem;
 padding-left: 3%;
 background-image: linear-gradient(to bottom ,#14141400 0%, #141414ea 31%,#141414 46%);
 }
@@ -72,7 +72,7 @@ background-image: linear-gradient(to bottom ,#14141400 0%, #141414ea 31%,#141414
         .class-header{
             display: flex;
             width: 25rem;
-            height: 15rem;
+            height: 17rem;
             justify-content: flex-end;
         }
             .card-header .class-header span{
@@ -86,7 +86,7 @@ background-image: linear-gradient(to bottom ,#14141400 0%, #141414ea 31%,#141414
                 }
                 .card-header .class-header img{
                     margin: 0;
-                    width: 45%;
+                    width: 50%;
                     object-fit: cover;
                 }
 
