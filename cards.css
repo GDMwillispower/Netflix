@@ -1,35 +1,3 @@
-.hero{
-    height: 500px;
-    width: 100vw;
-    background-color: #46d369;
-}
-
-:root {
-    --netflix-black:         #000000;
-    --netflix-dark-grey:     #696969;
-    --netflix-grey:          #808080;
-    --netflix-light-grey:    #aaaaaa;
-    --netflix-dark-white:    #f8f8f8;
-    --netflix-white:         #ffffff;
-    --netflix-dark-red:      #b9090b;
-    --netflix-red:           #e50914;
-    --netflix-bg:            #141414;
-    --netflix-opacity-bg:    rgba(20, 20, 20, 0.5);
-    --netflix-opacity-white: rgba(0, 0, 0, 0.5);
-    --netflix-gradient-navbar: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0,0,0,0) 100%);
-}
-
-* {
-box-sizing: border-box;
-margin:0;
-padding:0;
-}
-
-body {
-font-size: 10px;
-overflow-x: hidden;
-background-color: var(--netflix-bg);
-}
 
 #cards-section {
     width: 100vw;
