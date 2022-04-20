@@ -12,9 +12,9 @@
 }
 
 .container-cards {
-width: max-content;
+/* width: max-content; */
 display: flex;
-height: 8.5rem;
+height: 12rem;
 padding-left: 3%;
 background-image: linear-gradient(to bottom, #14141400,#141414 35%);
 }
@@ -30,7 +30,7 @@ background-image: linear-gradient(to bottom, #14141400,#141414 35%);
     width: 18vw;
     border-radius: 0.2rem;
     margin: 0.1%;
-    min-width: 10rem;
+    min-width: 18rem;
     transform: scale(1);
     transition-duration: 500ms;
     height: min-content;
@@ -91,7 +91,7 @@ background-image: linear-gradient(to bottom, #14141400,#141414 35%);
             display: none;
             width: 100%;
             height: auto;
-            padding: 0.5rem;
+            padding: 0.7rem;
             margin-top: -2px;
         }
 
@@ -99,7 +99,7 @@ background-image: linear-gradient(to bottom, #14141400,#141414 35%);
                     display: flex;
                     width: 100%;
                     justify-content:flex-start;
-                    padding-bottom: 0.4rem;
+                    padding-bottom: 1rem;
                 }
 
                         .card-b-t {
@@ -160,8 +160,10 @@ background-image: linear-gradient(to bottom, #14141400,#141414 35%);
 
                                 div[class^="card-button"] {
                                     display: flex;
-                                    width: 1.6rem;
-                                    height: 1.6rem;
+                                    /* font-size: 1rem; */
+                                    width: 2rem;
+                                    /* min-height: 1.5rem; */
+                                    height: 2rem;
                                     border-radius: 50%;
                                     justify-content: center;
                                 }
@@ -177,8 +179,8 @@ background-image: linear-gradient(to bottom, #14141400,#141414 35%);
                                         }
                         .card-b-t-plus:hover .card-tooltip{
                             display: flex;
-                            left: -139%;
-                            bottom: 140%;
+                            left: -235%;
+                            bottom: 155%;
                         }
 
                         .card-container-button-like {
@@ -193,8 +195,8 @@ background-image: linear-gradient(to bottom, #14141400,#141414 35%);
                                 }   
                                     .card-b-t-dislike:hover .card-tooltip{
                                         display: flex;
-                                        left: -68%; 
-                                        bottom: 140%;
+                                        left: -130%; 
+                                        bottom: 155%;
                                         
                                     }
 
@@ -203,8 +205,8 @@ background-image: linear-gradient(to bottom, #14141400,#141414 35%);
                                 }
                                     .card-b-t-like:hover .card-tooltip{
                                         display: flex;
-                                        left: -10%;
-                                        bottom: 120%;
+                                        left: -35%;
+                                        bottom: 130%;
                                     }
                                 
                                 .card-b-t-adoro {
@@ -213,8 +215,8 @@ background-image: linear-gradient(to bottom, #14141400,#141414 35%);
                                 }
                                     .card-b-t-adoro:hover .card-tooltip{
                                         display: flex;
-                                        bottom: 140%;
-                                        left: -10%;
+                                        bottom: 155%;
+                                        left: -35%;
                                     }
 
                                         .card-container-button-like:hover {
@@ -224,7 +226,7 @@ background-image: linear-gradient(to bottom, #14141400,#141414 35%);
 
                                         }
                                         .card-container-button-like:hover .card-b-t-dislike {
-                                            transform: translate(-30px);
+                                            transform: translate(-25px);
                                             display: flex;
                                             background-color: #2a2a2a;
                                             border-top-left-radius: 50%;
@@ -249,7 +251,7 @@ background-image: linear-gradient(to bottom, #14141400,#141414 35%);
                                             }   
 
                                         .card-container-button-like:hover .card-b-t-adoro {
-                                            transform: translate(30px);
+                                            transform: translate(25px);
                                             display: flex;
                                             background-color: #2a2a2a;
                                             border-top-right-radius: 50%;
@@ -267,8 +269,8 @@ background-image: linear-gradient(to bottom, #14141400,#141414 35%);
                                 }
                                 .card-b-t-dropdown:hover .card-tooltip{
                                     display: flex;
-                                    bottom: 140%;
-                                    left: -65%;
+                                    bottom: 155%;
+                                    left: -117%;
                                 }
                                     .card-content-buttons .card-b-t .card-button-dropdown:hover{
                                         background-color: var(--netflix-grey);
@@ -280,6 +282,7 @@ background-image: linear-gradient(to bottom, #14141400,#141414 35%);
                     flex-direction: column;
                     width: 100%;
                     line-height: 1rem;
+                    font-size: 0.9rem;
                 }
                 .card-content-info span {
                     border: 1px solid var(--netflix-grey);
@@ -288,10 +291,12 @@ background-image: linear-gradient(to bottom, #14141400,#141414 35%);
                 }
                 .card-content-info h4 {
                     color: #46d369;
+                    padding-bottom: 1rem;
                 }
 
                 .card-content-info p {
                     color: var(--netflix-dark-white);
+                    font-size: 0.9rem;
                 }
 
                 .card-content-features {
@@ -299,14 +304,15 @@ background-image: linear-gradient(to bottom, #14141400,#141414 35%);
                     flex-direction: column;
                     width: 100%;
                     line-height: 2rem;
-                    
                 }
                 .card-content-features p {
                     color: var(--netflix-grey);
+                    font-size: 0.9rem;
                 }
 
                 .card-content-features span {
                     color: var(--netflix-dark-white);
+                    font-size: 0.9rem;
                 }
 
 
