@@ -326,7 +326,6 @@ background-image: linear-gradient(to bottom ,#14141400 0%, #141414ea 31%,#141414
                 .card-content-info {
                     display: flex;
                     width: 100%;
-                    line-height: 1rem;
                     font-size: 1rem;
                     flex-wrap: wrap;
                 }
@@ -350,7 +349,7 @@ background-image: linear-gradient(to bottom ,#14141400 0%, #141414ea 31%,#141414
                     display: flex;
                     flex-direction: column;
                     width: 100%;
-                    line-height: 2rem;
+                    padding-top: 1rem;
                 }
                 .card-content-features p {
                     color: var(--netflix-grey);
