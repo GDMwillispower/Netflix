@@ -197,7 +197,7 @@ background-image: linear-gradient(to bottom ,#14141400,#14141403 10%,#14141405 3
                                     display: none;
                                 }
                                 .card-b-t-dislike:hover img{
-                                    background-color: var(--netflix-grey);
+                                    background-color: #414141;
                                 }   
                                     .card-b-t-dislike:hover .card-tooltip{
                                         display: flex;
@@ -210,7 +210,7 @@ background-image: linear-gradient(to bottom ,#14141400,#14141403 10%,#14141405 3
                                     z-index: 1;
                                 }
                                 .card-b-t-like:hover img{
-                                    background-color: var(--netflix-grey);
+                                    background-color: #414141;
                                 }
                                     .card-container-button-like:hover .card-b-t-like:hover .card-tooltip{
                                         display: flex;
@@ -223,7 +223,7 @@ background-image: linear-gradient(to bottom ,#14141400,#14141403 10%,#14141405 3
                                     position: absolute;
                                 }
                                 .card-b-t-adoro:hover img{
-                                    background-color: var(--netflix-grey);
+                                    background-color: #414141;
                                 }
                                     .card-b-t-adoro:hover .card-tooltip{
                                         display: flex;
@@ -235,7 +235,11 @@ background-image: linear-gradient(to bottom ,#14141400,#14141403 10%,#14141405 3
                                             display: flex;
                                             align-items: center;
                                             margin: 0;
-
+                                            animation: zoom-in 200ms forwards;
+                                        }
+                                        @keyframes zoom-in{
+                                            0%{transform: scale(1);}
+                                            100%{margin-left:-2px;transform: scale(1.1);}
                                         }
                                         .card-container-button-like:hover .card-b-t-dislike {
                                             animation: slide-left 400ms forwards;
