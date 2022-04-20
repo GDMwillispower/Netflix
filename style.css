@@ -20,6 +20,5 @@
 
 html { font-size: 10px; }
 
-body {overflow-x: hidden;
-    background-color: var(--netflix-bg);}
+body {overflow-x: hidden; background-color: var(--netflix-bg);}
 

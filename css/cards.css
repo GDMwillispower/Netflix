@@ -1,371 +1,387 @@
-
 #cards-section {
-    width: 100vw;
-    position: relative;
-    margin-top: -15rem;
-    overflow-x: hidden;
-    padding-top: 2rem;
+  width: 100vw;
+  position: relative;
+  margin-top: -15rem;
+  overflow-x: hidden;
+  padding-top: 2rem;
 }
 
-#cards-section h2{
-    padding-block: 1%;
+#cards-section h2 {
+  padding-block: 1%;
 }
 
 .container-cards {
-width: max-content;
-display: flex;
-height: 18rem;
-padding-left: 3%;
-background-image: linear-gradient(to bottom ,#14141400 0%, #141414ea 31%,#141414 46%);
+  width: max-content;
+  display: flex;
+  height: 18rem;
+  padding-left: 3%;
+  background-image: linear-gradient(
+    to bottom,
+    #14141400 0%,
+    #141414ea 31%,
+    #141414 46%
+  );
 }
 
-.container-cards-title{
-    margin-left: 3%;
-    color: #e5e5e5;
+.container-cards-title {
+  margin-left: 3%;
+  color: #e5e5e5;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    width: 20vw;
-    border-radius: 0.2rem;
-    margin: 0.1%;
-    min-width: 18rem;
-    transform: scale(1);
-    transition-duration: 500ms;
-    height: min-content;
-    /* visibility: hidden; */
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  border-radius: 0.2rem;
+  margin: 0.1%;
+  min-width: 18rem;
+  transform: scale(1);
+  transition-duration: 500ms;
+  height: min-content;
+  /* visibility: hidden; */
 }
 
-    .container-cards > :first-child:hover{
-        transform: scale(1.5);
-        transition-duration: 500ms;
-        z-index: 1;
-        transform-origin: left;
-    }
+.container-cards > :first-child:hover {
+  transform: scale(1.5);
+  transition-duration: 500ms;
+  z-index: 1;
+  transform-origin: left;
+}
 
-    .card:hover{
-        transform: scale(1.5);
-        transition-duration: 500ms;
-        z-index: 1;
-    }
+.card:hover {
+  transform: scale(1.5);
+  transition-duration: 500ms;
+  z-index: 1;
+}
 
 .card:hover .card-header .card-img {
-    border-top-left-radius: 0.2rem;
-    border-top-right-radius: 0.2rem;
-    display: none;
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
+  display: none;
 }
 
-.card:hover .card-content{
-    display: flex;
-    flex-direction: column;
-    background-color: #181818;
-    border-bottom-left-radius:0.2rem;
-    border-bottom-right-radius: 0.2rem;
+.card:hover .card-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #181818;
+  border-bottom-left-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
 }
-        .card-header {
-            display: flex;
-            width: 100%;
-            position: relative;
-        }
+.card-header {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
 
-        .class-header{
-            display: flex;
-            width: 25rem;
-            height: 17rem;
-            justify-content: flex-end;
-        }
-            .card-header .class-header span{
-                width: 50%;
-            }
-                
-                .card-header .class-header span img{
-                    height: 100%;
-                    width: 115%;
-                    object-fit: fill;
-                }
-                .card-header .class-header img{
-                    margin: 0;
-                    width: 50%;
-                    object-fit: cover;
-                }
+.class-header {
+  display: flex;
+  width: 25rem;
+  height: 17rem;
+  justify-content: flex-end;
+}
+.card-header .class-header span {
+  width: 50%;
+}
 
-                .card:hover .card-header .class-header{
-                    display: none;
-                }
-                .card-header img {
-                    display: flex;
-                    width: 100%;
-                }
+.card-header .class-header span img {
+  height: 100%;
+  width: 115%;
+  object-fit: fill;
+}
+.card-header .class-header img {
+  margin: 0;
+  width: 50%;
+  object-fit: cover;
+}
 
-                .card-header video {
-                    display: none;
-                    width: 100%;
-                    position: relative;
-                    border-top-left-radius: 0.2rem;
-                    border-top-right-radius: 0.2rem;
-                }
+.card:hover .card-header .class-header {
+  display: none;
+}
+.card-header img {
+  display: flex;
+  width: 100%;
+}
 
-                .card:hover .card-header .card-hide{
-                    display: flex;
-                }
+.card-header video {
+  display: none;
+  width: 100%;
+  position: relative;
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
+}
 
-        .card-content {
-            display: none;
-            width: 100%;
-            height: auto;
-            padding: 1rem;
-            margin-top: -2px;
-        }
+.card:hover .card-header .card-hide {
+  display: flex;
+}
 
-                .card-content-buttons {
-                    display: flex;
-                    width: 100%;
-                    justify-content:flex-start;
-                    padding-bottom: 1rem;
-                }
+.card-content {
+  display: none;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  margin-top: -2px;
+}
 
-                        .card-b-t {
-                            display: flex;
-                            flex-direction: column;
-                            position: relative;
-                            margin: 0.2rem;
-                        }
-                            
-                                .card-tooltip {
-                                    display: none;
-                                    position: absolute;
-                                    color: var(--netflix-black);
-                                    background-color: var(--netflix-dark-white);
-                                    border-radius: 0.2rem;
-                                    padding: 0.1rem;
-                                    z-index: 1;
-                                    bottom: 120%;
-                                    /* left: -30%; */
-                                    width: max-content;
-                                }
+.card-content-buttons {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  padding-bottom: 1rem;
+}
 
-                                .card-tooltip::after {
-                                    content: "";
-                                    position: absolute;
-                                    top: 100%;
-                                    left: 50%;
-                                    margin-left: -5px;
-                                    border-width: 5px;
-                                    border-style: solid;
-                                    border-color: white transparent transparent transparent;
-                                }
+.card-b-t {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0.2rem;
+}
 
-                                .card-button-play {
-                                    background-color: var(--netflix-dark-white);
-                                }
-                                    .card-button-play:hover{
-                                        background-color: rgb(199, 199, 199);
-                                    }
-                                    .card-content-buttons .card-b-t .card-button-play:hover img{
-                                        background-color: rgb(199, 199, 199);
-                                    }
+.card-tooltip {
+  display: none;
+  position: absolute;
+  color: var(--netflix-black);
+  background-color: var(--netflix-dark-white);
+  border-radius: 0.2rem;
+  padding: 0.1rem;
+  z-index: 1;
+  bottom: 120%;
+  /* left: -30%; */
+  width: max-content;
+}
 
-                                    .card-content-buttons .card-b-t .card-button-plus:hover img{
-                                        
-                                        border: 1px solid white;
-                                    }
+.card-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
 
-                                /* .card-button-plus, 
-                                .card-button-dropdown,
-                                .card-button-like {
-                                border: 1.5px solid var(--netflix-grey);
-                                } */
+.card-button-play {
+  background-color: var(--netflix-dark-white);
+}
+.card-button-play:hover {
+  background-color: rgb(199, 199, 199);
+}
+.card-content-buttons .card-b-t .card-button-play:hover img {
+  background-color: rgb(199, 199, 199);
+}
 
-                                div[class^="card-button"] {
-                                    display: flex;
-                                    /* font-size: 1rem; */
-                                    width: 2.5rem;
-                                    /* min-height: 1.5rem; */
-                                    height: 2.5rem;
-                                    border-radius: 50%;
-                                    justify-content: center;
-                                    
-                                }
-                                
+.card-content-buttons .card-b-t .card-button-plus:hover img {
+  border: 1px solid white;
+}
 
-                                        div[class^="card-button"] img {
-                                            display: flex;
-                                            border-radius: 50%;
-                                            border: 1px solid var(--netflix-grey);
-                                        }
+/* .card-button-plus, 
+.card-button-dropdown,
+.card-button-like {
+border: 1.5px solid var(--netflix-grey);
+} */
 
-                                        div[class^="card-button-play"] img {
-                                            display: flex;
-                                            border-radius: 50%;
-                                            border: 1px solid var(--netflix-dark-white);
-                                        }
-                                        
-                                        div[class^="card-button"] img:hover{
-                                            border-radius: 50%;
-                                        }
-                        .card-b-t-plus:hover .card-tooltip{
-                            display: flex;
-                            left: -180%;
-                            bottom: 155%;
-                        }
+div[class^="card-button"] {
+  display: flex;
+  /* font-size: 1rem; */
+  width: 2.5rem;
+  /* min-height: 1.5rem; */
+  height: 2.5rem;
+  border-radius: 50%;
+  justify-content: center;
+}
 
-                        .card-container-button-like {
-                            display: flex;
-                            position: relative;
-                            margin: 0.2rem;
-                        }
-                                .card-b-t-dislike {
-                                    position: absolute;
-                                    display: none;
-                                }
-                                .card-b-t-dislike:hover img{
-                                    background-color: #414141;
-                                }   
-                                    .card-b-t-dislike:hover .card-tooltip{
-                                        display: flex;
-                                        left: -94%; 
-                                        bottom: 155%;                                        
-                                    }
+div[class^="card-button"] img {
+  display: flex;
+  border-radius: 50%;
+  border: 1px solid var(--netflix-grey);
+}
 
-                                .card-b-t-like {
-                                    position: absolute;
-                                    z-index: 1;
-                                }
-                                .card-b-t-like:hover img{
-                                    background-color: #414141;
-                                }
-                                    .card-container-button-like:hover .card-b-t-like:hover .card-tooltip{
-                                        display: flex;
-                                        left: -20%;
-                                        bottom: 137%;
-                                    }
-                                
-                                .card-b-t-adoro {
-                                    display: none;
-                                    position: absolute;
-                                }
-                                .card-b-t-adoro:hover img{
-                                    background-color: #414141;
-                                }
-                                    .card-b-t-adoro:hover .card-tooltip{
-                                        display: flex;
-                                        bottom: 155%;
-                                        left: -20%;
-                                    }
+div[class^="card-button-play"] img {
+  display: flex;
+  border-radius: 50%;
+  border: 1px solid var(--netflix-dark-white);
+}
 
-                                        .card-container-button-like:hover {
-                                            display: flex;
-                                            align-items: center;
-                                            margin: 0;
-                                            animation: zoom-in 200ms forwards;
-                                        }
-                                        @keyframes zoom-in{
-                                            0%{transform: scale(1);}
-                                            100%{margin-left:-2px;transform: scale(1.1);}
-                                        }
-                                        .card-container-button-like:hover .card-b-t-dislike {
-                                            animation: slide-left 400ms forwards;
-                                            display: flex;
-                                            background-color: #2a2a2a;
-                                            border-top-left-radius: 50%;
-                                            border-bottom-left-radius: 50%;
-                                            border: 3px solid #2a2a2a;
-                                        }
-                                        @keyframes slide-left{
-                                            0%{opacity: 0; transform: translate(0px);}
-                                            100%{opacity: 1; transform: translate(-30px);}
-                                        }
-                                            .card-container-button-like:hover .card-b-t-dislike img{
-                                                border: none;
-                                                /* width: 70%; */
-                                            }
-                                        
-                                        .card-container-button-like:hover .card-b-t-like  .card-button-like{
-                                            display: flex;
-                                            background-color: #2a2a2a;
-                                            border: 3px solid #2a2a2a;
-                                            border-inline: 3px solid #2a2a2a;
-                                            border-radius: 0%;
-                                            box-sizing: content-box;
-                                        }
+div[class^="card-button"] img:hover {
+  border-radius: 50%;
+}
+.card-b-t-plus:hover .card-tooltip {
+  display: flex;
+  left: -180%;
+  bottom: 155%;
+}
 
-                                            .card-container-button-like:hover .card-b-t-like img{
-                                                border: none;
-                                            }   
+.card-container-button-like {
+  display: flex;
+  position: relative;
+  margin: 0.2rem;
+}
+.card-b-t-dislike {
+  position: absolute;
+  display: none;
+}
+.card-b-t-dislike:hover img {
+  background-color: #414141;
+}
+.card-b-t-dislike:hover .card-tooltip {
+  display: flex;
+  left: -94%;
+  bottom: 155%;
+}
 
-                                        .card-container-button-like:hover .card-b-t-adoro {
-                                            animation: slide-right 400ms forwards;
-                                            display: flex;
-                                            background-color: #2a2a2a;
-                                            border-top-right-radius: 50%;
-                                            border-bottom-right-radius: 50%;
-                                            border: 3px solid #2a2a2a;
-                                        }
-                                        @keyframes slide-right{
-                                            0%{opacity: 0; transform: translate(0px);}
-                                            100%{opacity: 1; transform: translate(30px);}
-                                        }
-                                            .card-container-button-like:hover .card-b-t-adoro img{
-                                                border: none;
-                                            }
+.card-b-t-like {
+  position: absolute;
+  z-index: 1;
+}
+.card-b-t-like:hover img {
+  background-color: #414141;
+}
+.card-container-button-like:hover .card-b-t-like:hover .card-tooltip {
+  display: flex;
+  left: -20%;
+  bottom: 137%;
+}
 
-                                .card-b-t-dropdown {
-                                    display: flex;
-                                    margin-left: auto;
-                                }
-                                .card-b-t-dropdown:hover .card-tooltip{
-                                    display: flex;
-                                    bottom: 155%;
-                                    left: -81%;
-                                }
-                                    .card-content-buttons .card-b-t .card-button-dropdown:hover img{
-                                        border: 1px solid var(--netflix-dark-white);
-                                    }
+.card-b-t-adoro {
+  display: none;
+  position: absolute;
+}
+.card-b-t-adoro:hover img {
+  background-color: #414141;
+}
+.card-b-t-adoro:hover .card-tooltip {
+  display: flex;
+  bottom: 155%;
+  left: -20%;
+}
 
-                .card-content-info {
-                    display: flex;
-                    width: 100%;
-                    font-size: 1rem;
-                    flex-wrap: wrap;
-                }
-                .card-content-info span {
-                    border: 1px solid var(--netflix-grey);
-                    margin-inline: 0.2rem 0.2rem 0.2rem 0;
-                    padding: 0 0.3rem;
-                }
-                .card-content-info h4 {
-                    color: #46d369;
-                    padding-bottom: 1rem;
-                    padding-right: 1rem;
-                }
+.card-container-button-like:hover {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  animation: zoom-in 200ms forwards;
+}
+@keyframes zoom-in {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    margin-left: -2px;
+    transform: scale(1.1);
+  }
+}
+.card-container-button-like:hover .card-b-t-dislike {
+  animation: slide-left 400ms forwards;
+  display: flex;
+  background-color: #2a2a2a;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border: 3px solid #2a2a2a;
+}
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    transform: translate(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-30px);
+  }
+}
+.card-container-button-like:hover .card-b-t-dislike img {
+  border: none;
+  /* width: 70%; */
+}
 
-                .card-content-info p {
-                    color: var(--netflix-dark-white);
-                    font-size: 1rem;
-                }
+.card-container-button-like:hover .card-b-t-like .card-button-like {
+  display: flex;
+  background-color: #2a2a2a;
+  border: 3px solid #2a2a2a;
+  border-inline: 3px solid #2a2a2a;
+  border-radius: 0%;
+  box-sizing: content-box;
+}
 
-                .card-content-features {
-                    display: flex;
-                    flex-direction: column;
-                    width: 100%;
-                    padding-top: 1rem;
-                }
-                .card-content-features p {
-                    color: var(--netflix-grey);
-                    font-size: 1rem;
-                }
+.card-container-button-like:hover .card-b-t-like img {
+  border: none;
+}
 
-                .card-content-features span {
-                    color: var(--netflix-dark-white);
-                    font-size: 1rem;
-                }
+.card-container-button-like:hover .card-b-t-adoro {
+  animation: slide-right 400ms forwards;
+  display: flex;
+  background-color: #2a2a2a;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border: 3px solid #2a2a2a;
+}
+@keyframes slide-right {
+  0% {
+    opacity: 0;
+    transform: translate(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(30px);
+  }
+}
+.card-container-button-like:hover .card-b-t-adoro img {
+  border: none;
+}
+
+.card-b-t-dropdown {
+  display: flex;
+  margin-left: auto;
+}
+.card-b-t-dropdown:hover .card-tooltip {
+  display: flex;
+  bottom: 155%;
+  left: -81%;
+}
+.card-content-buttons .card-b-t .card-button-dropdown:hover img {
+  border: 1px solid var(--netflix-dark-white);
+}
+
+.card-content-info {
+  display: flex;
+  width: 100%;
+  font-size: 1rem;
+  flex-wrap: wrap;
+}
+.card-content-info span {
+  border: 1px solid var(--netflix-grey);
+  margin-inline: 0.2rem 0.2rem 0.2rem 0;
+  padding: 0 0.3rem;
+}
+.card-content-info h4 {
+  color: #46d369;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+}
+
+.card-content-info p {
+  color: var(--netflix-dark-white);
+  font-size: 1rem;
+}
+
+.card-content-features {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 1rem;
+}
+.card-content-features p {
+  color: var(--netflix-grey);
+  font-size: 1rem;
+}
+
+.card-content-features span {
+  color: var(--netflix-dark-white);
+  font-size: 1rem;
+}
 
 @media (max-width: 1024px) {
-    #cards-section {
-        margin-top: 0rem;
-        padding-top: 8rem;
-    }
+  #cards-section {
+    margin-top: 0rem;
+    padding-top: 8rem;
+  }
 }
-
-
