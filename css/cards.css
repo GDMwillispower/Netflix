@@ -16,7 +16,7 @@
 display: flex;
 height: 15rem;
 padding-left: 3%;
-background-image: linear-gradient(to bottom ,#14141400,#14141403 10%,#14141405 33%,#14141407 40%,#141414 53%);
+background-image: linear-gradient(to bottom ,#14141400 0%, #141414ea 31%,#141414 46%);
 }
 
 .container-cards-title{
@@ -50,10 +50,10 @@ background-image: linear-gradient(to bottom ,#14141400,#14141403 10%,#14141405 3
         z-index: 1;
     }
 
-.card:hover .card-header .card-img{
+.card:hover .card-header .card-img {
     border-top-left-radius: 0.2rem;
     border-top-right-radius: 0.2rem;
-    visibility: hidden;
+    display: none;
 }
 
 .card:hover .card-content{
@@ -69,6 +69,25 @@ background-image: linear-gradient(to bottom ,#14141400,#14141403 10%,#14141405 3
             position: relative;
         }
 
+        .class-header{
+            display: flex;
+            width: 25rem;
+            height: 15rem;
+            justify-content: flex-end;
+        }
+            .card-header .class-header span{
+                width: 50%;
+            }
+                
+                .card-header .class-header span img{
+                    height: 100%;
+                    width: 115%;
+                }
+                .card-header .class-header img{
+                    margin: 0;
+                    width: 45%;
+                }
+
                 .card-header img {
                     display: flex;
                     width: 100%;
@@ -77,14 +96,13 @@ background-image: linear-gradient(to bottom ,#14141400,#14141403 10%,#14141405 3
                 .card-header video {
                     display: none;
                     width: 100%;
-                    position: absolute;
+                    position: relative;
                     border-top-left-radius: 0.2rem;
                     border-top-right-radius: 0.2rem;
                 }
 
                 .card:hover .card-header .card-hide{
                     display: flex;
-
                 }
 
         .card-content {
