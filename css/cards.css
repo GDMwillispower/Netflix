@@ -196,8 +196,7 @@ background-image: linear-gradient(to bottom, #14141400,#141414 35%);
                                     .card-b-t-dislike:hover .card-tooltip{
                                         display: flex;
                                         left: -130%; 
-                                        bottom: 155%;
-                                        
+                                        bottom: 155%;                                        
                                     }
 
                                 .card-b-t-like {
