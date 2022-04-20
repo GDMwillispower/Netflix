@@ -1,0 +1,539 @@
+#navbar-container {
+  position: fixed;
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.2rem 5rem;
+  z-index: 100;
+  background-image: var(--netflix-gradient-navbar);
+}
+
+.navbar-color {
+  background-color: var(--netflix-bg);
+  transition: all 1s;
+}
+
+#navbar-container .left-container #toggler,
+#navbar-container .left-container label,
+#navbar-container .left-container .menu {
+  display: none;
+}
+
+#navbar-container .left-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+#navbar-container .left-container label .fa-bars {
+  display: none;
+  color: var(--netflix-white);
+}
+
+#navbar-container .left-container .logo {
+  display: flex;
+  align-items: center;
+}
+
+#navbar-container .left-container .logo img {
+  max-width: 10rem;
+}
+
+#navbar-container .left-container .navigation {
+  display: flex;
+  align-items: center;
+}
+
+#navbar-container .left-container .navigation li {
+  list-style: none;
+  margin: 0rem 0.8rem;
+  font-size: 1.4rem;
+}
+
+#navbar-container .left-container .navigation li:first-child {
+  margin: 0rem 0.8rem 0rem 3.8rem;
+}
+
+#navbar-container .left-container .navigation li a {
+  text-decoration: none;
+  color: var(--netflix-white);
+  font-weight: 300;
+}
+
+#navbar-container .left-container .navigation li:first-child a {
+  font-weight: 550;
+}
+
+#navbar-container .left-container .navigation li a:hover {
+  color: #b3b3b3;
+}
+
+#navbar-container .right-container {
+  display: flex;
+  align-items: center;
+}
+
+#navbar-container input.large {
+  display: inline-block;
+}
+#navbar-container input.small {
+  display: none;
+}
+
+#navbar-container .right-container .search {
+  margin-right: 3rem;
+  width: 23.5rem;
+  height: 3.2rem;
+  padding: 0.5rem;
+  background-color: var(--netflix-black);
+  border-top: 1px solid var(--netflix-white);
+  border-right: 1px solid var(--netflix-white);
+  border-bottom: 1px solid var(--netflix-white);
+  border-left: none;
+  outline: none;
+  color: var(--netflix-white);
+}
+
+#navbar-container .right-container .search::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  height: 2rem;
+  width: 2rem;
+  color: var(--netflix-white);
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23777'><path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/></svg>");
+  cursor: pointer;
+}
+
+#navbar-container .right-container .fa-search {
+  display: flex;
+  align-items: center;
+  color: var(--netflix-white);
+  padding: 0.5rem;
+  font-size: 2rem;
+  background-color: var(--netflix-black);
+  border-top: 1px solid var(--netflix-white);
+  border-right: none;
+  border-bottom: 1px solid var(--netflix-white);
+  border-left: 1px solid var(--netflix-white);
+}
+
+#navbar-container .right-container .fa-bell {
+  display: flex;
+  color: var(--netflix-white);
+  font-size: 2.3rem;
+  margin-right: 3rem;
+}
+
+#navbar-container .right-container .fa-bell:hover {
+  animation: shake 1s forwards;
+}
+
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  30% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+}
+
+#navbar-container .right-container .profile-container {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  width: 5.5rem;
+  position: relative;
+}
+
+#navbar-container .right-container .profile-container .fa-caret-down {
+  font-size: 1.3rem;
+  padding: 1rem 0rem;
+  margin: 0;
+  color: var(--netflix-white);
+}
+
+#navbar-container .right-container .profile-container:hover .fa-caret-down {
+  transform: rotate(180deg);
+  transition: all 0.2s ease-in-out;
+}
+
+#navbar-container .right-container .profile-container::before {
+  content: "";
+  padding: 0;
+  margin: 0;
+  display: block;
+  width: 3.4rem;
+  height: 3.4rem;
+  background-image: url(../assets/navbar/profile-1.png);
+  border-radius: 3px;
+}
+
+#navbar-container .right-container .select-container:hover ul {
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
+
+#navbar-container .right-container .select-container ul {
+  margin: 0;
+  padding: 2.5rem 0 0 0;
+  background-color: var(--netflix-black);
+  display: none;
+  position: absolute;
+  top: 5.3rem;
+  right: 5rem;
+}
+
+#navbar-container .right-container .select-container ul li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+#navbar-container .right-container .select-container ul li a {
+  width: 17rem;
+  display: block;
+  padding: 0.5rem 1rem;
+  color: var(--netflix-white);
+  text-decoration: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+#navbar-container .right-container .select-container ul li a::before {
+  content: "";
+  display: inline-block;
+  width: 3.4rem;
+  height: 3.4rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+  border-radius: 3px;
+}
+
+#navbar-container .right-container .select-container ul li a:hover {
+  text-decoration: underline;
+}
+
+#navbar-container .p-1::before {
+  background-image: url(../assets/navbar/profile-2.png);
+}
+#navbar-container .p-2::before {
+  background-image: url(../assets/navbar/profile-3.png);
+}
+#navbar-container .p-3::before {
+  background-image: url(../assets/navbar/profile-4.png);
+}
+#navbar-container .p-4::before {
+  background-image: url(../assets/navbar/profile-5.png);
+}
+#navbar-container .p-5::before {
+  background-image: url(../assets/navbar/profile-6.png);
+}
+#navbar-container .p-6::before {
+  background-image: url(../assets/navbar/profile-7.png);
+}
+#navbar-container .edit::before {
+  background-image: url(../assets/navbar/edit.svg);
+}
+#navbar-container .help::before {
+  background-image: url(../assets/navbar/help.png);
+}
+#navbar-container .exit::before {
+  background-image: url(../assets/navbar/exit.png);
+}
+#navbar-container .account::before {
+  background-image: url(../assets/navbar/user.png);
+}
+
+/* SMARTPHONE MEDIA QUERIES (Portrait and Lanscape) */
+@media (max-width: 767px) {
+  #navbar-container {
+    padding: 0rem 1rem;
+    height: 5rem;
+    background-color: var(--netflix-black);
+  }
+
+  #navbar-container .left-container .logo img {
+    max-width: 8rem;
+  }
+
+  #navbar-container .right-container .fa-bell,
+  #navbar-container .right-container .fa-search,
+  #navbar-container .right-container .select-container {
+    display: none;
+  }
+
+  #navbar-container .left-container .navigation {
+    display: none;
+  }
+
+  #navbar-container .left-container label .fa-bars {
+    display: block;
+    color: var(--netflix-white);
+    font-size: 2.5rem;
+    margin: 2rem;
+  }
+
+  #navbar-container .right-container {
+    width: 55%;
+    position: relative;
+  }
+
+  #navbar-container .right-container .search {
+    width: 100%;
+    border: 1px solid rgba(170, 170, 170, 0.5);
+    padding: 0rem 1rem;
+    background-color: rgba(27, 27, 27, 0.5);
+    border-radius: 3px;
+  }
+
+  #navbar-container input.large {
+    display: none;
+  }
+  #navbar-container input.small {
+    display: inline-block;
+  }
+
+  #navbar-container .left-container .menu {
+    width: 65%;
+    height: 100vh;
+    overflow: hidden;
+    padding: 1rem 1rem;
+  }
+
+  #navbar-container .left-container .menu .profile-view {
+    width: 100%;
+    height: 5rem;
+    color: var(--netflix-white);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0rem 2rem;
+  }
+
+  #navbar-container .left-container .menu .profile-view .profile-icon {
+    padding: 0;
+    margin: 0;
+    width: 3.4rem;
+    height: 3.4rem;
+    background-image: url(../assets/navbar/profile-1.png);
+  }
+
+  #navbar-container .left-container .menu .profile-view .profile-info {
+    margin-left: 1rem;
+    padding: 0;
+  }
+
+  #navbar-container .left-container .menu .profile-view .profile-info h4 {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  #navbar-container .left-container .menu .profile-view .profile-info h5 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  #navbar-container .left-container .menu .list {
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem 2rem;
+  }
+
+  #navbar-container .left-container .menu hr {
+    border: 1px solid #1b1b1b;
+    margin: 1rem 0rem;
+    padding: 0;
+    width: 100%;
+  }
+
+  #navbar-container .left-container .menu .list li {
+    list-style: none;
+    margin: 0.6rem 0rem;
+  }
+
+  #navbar-container .left-container .menu .list li a {
+    color: var(--netflix-light-grey);
+    font-size: 1.48rem;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  #navbar-container .left-container .menu .list li .select {
+    color: var(--netflix-white);
+    border-left: 3px solid red;
+    width: 10rem;
+    padding: 0rem 0rem 0rem 1rem;
+    font-weight: bold;
+  }
+
+  #navbar-container .left-container .menu .list li a:hover {
+    color: var(--netflix-white);
+    font-weight: bold;
+  }
+
+  #navbar-container .left-container label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  #toggler:checked ~ .menu {
+    display: inline-block;
+    z-index: 1;
+    position: absolute;
+    top: 4.8rem;
+    left: 0rem;
+    background-color: var(--netflix-black);
+    overflow-y: scroll;
+  }
+}
+
+/* TABLET MEDIA QUERIES (Portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #navbar-container {
+    padding: 0rem 1rem;
+    height: 5rem;
+    background-color: var(--netflix-black);
+  }
+
+  #navbar-container .left-container .logo img {
+    max-width: 8rem;
+  }
+
+  #navbar-container .right-container .fa-bell,
+  #navbar-container .right-container .fa-search,
+  #navbar-container .right-container .select-container {
+    display: none;
+  }
+
+  #navbar-container .left-container .navigation {
+    display: none;
+  }
+
+  #navbar-container .left-container label .fa-bars {
+    display: block;
+    color: var(--netflix-white);
+    font-size: 2.5rem;
+    margin: 2rem;
+  }
+
+  #navbar-container .right-container {
+    width: 40%;
+    position: relative;
+  }
+
+  #navbar-container .right-container .search {
+    width: 100%;
+    border: 1px solid var(--netflix-opacity-white);
+    padding: 0rem 1rem;
+    background-color: var(--netflix-opacity-bg);
+    border-radius: 3px;
+  }
+
+  #navbar-container input.large {
+    display: none;
+  }
+  #navbar-container input.small {
+    display: inline-block;
+  }
+
+  #navbar-container .left-container .menu {
+    width: 30%;
+    height: 100vh;
+    overflow: hidden;
+    padding: 1rem 1rem;
+  }
+
+  #navbar-container .left-container .menu .profile-view {
+    width: 100%;
+    height: 5rem;
+    color: var(--netflix-white);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0rem 2rem;
+  }
+
+  #navbar-container .left-container .menu .profile-view .profile-icon {
+    padding: 0;
+    margin: 0;
+    width: 3.4rem;
+    height: 3.4rem;
+    background-image: url(../assets/navbar/profile-1.png);
+  }
+
+  #navbar-container .left-container .menu .profile-view .profile-info {
+    margin-left: 1rem;
+    padding: 0;
+  }
+
+  #navbar-container .left-container .menu .profile-view .profile-info h4 {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  #navbar-container .left-container .menu .profile-view .profile-info h5 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  #navbar-container .left-container .menu .list {
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem 2rem;
+  }
+
+  #navbar-container .left-container .menu hr {
+    border: 1px solid var(--netflix-light-grey);
+    margin: 1rem 0rem;
+    padding: 0;
+    width: 100%;
+  }
+
+  #navbar-container .left-container .menu .list li {
+    list-style: none;
+    margin: 0.6rem 0rem;
+  }
+
+  #navbar-container .left-container .menu .list li a {
+    color: var(--netflix-light-grey);
+    font-size: 1.48rem;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  #navbar-container .left-container .menu .list li .select {
+    color: var(--netflix-white);
+    border-left: 3px solid var(--netflix-red);
+    width: 10rem;
+    padding: 0rem 0rem 0rem 1rem;
+    font-weight: bold;
+  }
+
+  #navbar-container .left-container .menu .list li a:hover {
+    color: var(--netflix-white);
+    font-weight: bold;
+  }
+
+  #navbar-container .left-container label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  #toggler:checked ~ .menu {
+    display: inline-block;
+    z-index: 1;
+    position: absolute;
+    top: 4.8rem;
+    left: 0rem;
+    background-color: var(--netflix-black);
+  }
+}

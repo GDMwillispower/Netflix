@@ -1,32 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta property="og:image" content="https://gogomagazine.it/wp-content/uploads/2019/07/netflix-logo-e1563434160366.jpg"/>
-    <meta property="og:title" content="Netflix"/>
-    <meta property="og:description" content="Qui potete trovare la riproduzione del sito di Netflix effettuata dal Team7 del corso Fullstack di Develhope"/>
-    <meta property="og:url" content="http://riproduzionenetflix.it/esercizioteam7"/>
-    <meta property="og:type" content="website"/>
-    
+    <meta
+      property="og:image"
+      content="https://gogomagazine.it/wp-content/uploads/2019/07/netflix-logo-e1563434160366.jpg"
+    />
+    <meta property="og:title" content="Netflix" />
+    <meta
+      property="og:description"
+      content="Qui potete trovare la riproduzione del sito di Netflix effettuata dal Team7 del corso Fullstack di Develhope"
+    />
+    <meta
+      property="og:url"
+      content="http://riproduzionenetflix.it/esercizioteam7"
+    />
+    <meta property="og:type" content="website" />
+
     <title>Netflix</title>
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="style.css"/>
-</head>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-
-        </nav>
+      <nav id="navbar-container">
+        <div class="left-container">
+          <input type="checkbox" id="toggler" />
+          <label for="toggler">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </label>
+          <div class="menu">
+            <div class="profile-view">
+              <div class="profile-icon"></div>
+              <div class="profile-info">
+                <h4>Gabbo</h4>
+                <h5>Cambia profilo</h5>
+              </div>
+            </div>
+            <ul class="list">
+              <li><a href="#">Account</a></li>
+              <li><a href="#">Centro Assistenza</a></li>
+              <li><a href="#">Esci da Netflix</a></li>
+            </ul>
+            <hr />
+            <ul class="list">
+              <li><a href="#" class="select">Home</a></li>
+              <li><a href="#">La mia lista</a></li>
+              <li><a href="#">Thriller</a></li>
+              <li><a href="#">Film e TV italiani</a></li>
+              <li><a href="#">Bambini e famiglie</a></li>
+              <li><a href="#">Film e TV internazionali</a></li>
+              <li><a href="#">Reality</a></li>
+              <li><a href="#">Anime</a></li>
+              <li><a href="#">Azione</a></li>
+              <li><a href="#">Commedie</a></li>
+              <li><a href="#">Fantasy</a></li>
+              <li><a href="#">Fantascienza</a></li>
+              <li><a href="#">Horror</a></li>
+              <li><a href="#">Stand-up</a></li>
+              <li><a href="#">Documentari</a></li>
+              <li><a href="#">Film e TV europei</a></li>
+              <li><a href="#">Musica e musical</a></li>
+              <li><a href="#">Romantici</a></li>
+              <li><a href="#">Drammi</a></li>
+            </ul>
+          </div>
+          <a href="#" class="logo">
+            <img src="assets/navbar/logo.png" alt="" />
+          </a>
+          <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Serie TV</a></li>
+            <li><a href="#">Film</a></li>
+            <li><a href="#">Nuovi e Popolari</a></li>
+            <li><a href="#">La mia lista</a></li>
+          </ul>
+        </div>
+        <div class="right-container">
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <input
+            type="search"
+            class="search large"
+            placeholder="Titoli, persone, generi"
+          />
+          <input type="search" class="search small" placeholder="Cerca" />
+          <i class="fa fa-bell" aria-hidden="true"></i>
+          <div class="select-container">
+            <div class="profile-container">
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <ul>
+              <li><a href="#" class="p-1">Gilda</a></li>
+              <li><a href="#" class="p-2">Gabriel</a></li>
+              <li><a href="#" class="p-3">Gabriele</a></li>
+              <li><a href="#" class="p-4">Francesco</a></li>
+              <li><a href="#" class="p-5">Alessio</a></li>
+              <li><a href="#" class="p-6">Gianluigi</a></li>
+              <li><a href="#" class="edit">Gestisci profili</a></li>
+              <hr />
+              <li><a href="#" class="account">Account</a></li>
+              <li><a href="#" class="help">Assistenza</a></li>
+              <hr />
+              <li><a href="#" class="exit">Esci da Netflix</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
+
     
     <main>
         <!--Hero section-->
-        <section class="hero">
-
+      <section class="hero-section">
+        <div class="hero-content">
+          <div class="hero-logo">
+            <img
+              src="assets/hero-section/Allegiant_logo.png"
+              alt="Logo della serie Allegiant"
+              width="550px"
+              id="hero-logo"
+              class="responsive"
+            />
+          </div>
+          <div class="hero-text">
+            <p>
+              Beatrice, Tobias, Caleb e pochi altri riescono a fuggire dalla
+              loro città chiusa per raggiungere il mondo proibito che si trova
+              al di là delle mura.
+            </p>
+          </div>
+        
+        <div class="hero-buttons">
+          <div class="hero-buttons-sx">
+            <button id="button-play" class="responsive">
+              <span id="symbol1">&#9654;</span> Riproduci
+            </button>
+            <button id="button-info">
+              <span id="symbol2">&#9432;</span>Altre&nbsp;info
+            </button>
+          </div>
+          <div class="hero-button-dx">
+            <button id="button-replay">&#10227;</button>
+          </div>
+        </div>
+        </div>
         </section>
                         <!--Cards-->
         <section id="cards-section">
@@ -2147,8 +2280,6 @@
         </section>
     </main>
 
-    <footer>
-
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
