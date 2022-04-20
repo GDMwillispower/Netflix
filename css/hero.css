@@ -2,11 +2,11 @@
 .hero-section {
     padding-left: 30px;
     padding-top: 100px;
-    background-image: url(assets/hero-section/Hero-background-team7.webp);
+    background-image: url(../assets/hero-section/Hero-background-team7.webp);
     background-repeat: no-repeat;
     background-size:cover;
     background-size: 100%;
-    height: 150%;
+    height: 90vh;
     padding-bottom: 10%;
 }
 .hero-text {
