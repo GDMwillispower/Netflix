@@ -1,0 +1,142 @@
+/* Inizio Hero Section Alessio I. Gabriele M.*/
+.hero-section {
+  padding-left: 30px;
+  padding-top: 100px;
+  background-image: url(../assets/hero-section/Hero-background-team7.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100%;
+  height: 90vh;
+  padding-bottom: 10%;
+}
+
+/* Content */
+.hero-content {
+    margin-top: 3rem;
+}
+
+.hero-text {
+  font-family: Helvetica, Arial, sans-serif;
+  color: var(--netflix-white);
+  width: 20%;
+  margin-left: 2%;
+  margin-top: -3%;
+}
+
+.hero-buttons {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 2%;
+}
+
+p,
+button,
+#symbol1,
+#symbol2 {
+  font-size: 1vw;
+}
+.responsive {
+  width: 40%;
+}
+#button-play,
+#button-info {
+  font-weight: bold;
+  color: var(--netflix-black);
+  background: var(--netflix-white);
+  height: 80%;
+  width: 100%;
+  border: 0.5px solid var(--netflix-black);
+  border-radius: 4px;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10% 30%;
+}
+.hero-buttons-sx {
+  display: flex;
+  flex-direction: row;
+  /* width: 20%; */
+  height: auto;
+}
+#button-info {
+  color: var(--netflix-white);
+  background: var(--netflix-grey);
+  margin-left: 15px;
+  opacity: 90%;
+}
+#button-info:hover {
+  cursor: pointer;
+  background-color: rgba(236, 236, 236, 0.4);
+}
+#button-play:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#symbol1 {
+  margin-right: 7px;
+  font-style: Bebas Neue;
+}
+#symbol2 {
+  margin-right: 7px;
+  font-style: Bebas Neue;
+}
+#button-replay {
+  color: var(--netflix-white);
+  background: transparent;
+  border-radius: 50%;
+  border: 1.5px solid var(--netflix-white);
+  font-size: 1.5vw;
+  font-weight: lighter;
+  opacity: 95%;
+  padding: 20% 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+}
+.hero-button-dx {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 100px;
+}
+#button-replay:hover {
+  cursor: pointer;
+  border: 3px solid var(--netflix-white);
+}
+
+/* @media screen and (max-width:825px){
+    #button-play, #button-info {
+        font-size: 8px;
+    }
+    #button-replay{
+        font-size: 10px;
+        padding:4px 5px;
+    }
+  }
+  @media screen and (max-width:1300px){
+    #button-replay{
+        margin-left: 100%;
+    }
+  } */
+
+/* SMARTPHONE MEDIA QUERIES (Portrait and Lanscape) */
+@media (max-width: 767px) {
+  .hero-section {
+    display: none;
+  }
+}
+
+/* TABLET MEDIA QUERIES (Portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero-section {
+    display: none;
+  }
+}
+
+/*Fine Hero Section Alessio I. Gabriele M.*/
