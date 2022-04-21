@@ -1,0 +1,137 @@
+@media all and (min-width: 800px) {
+    .footer-links{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 20px 20px 20px 20px;
+        gap: 0px 0px;        
+    }
+    .link-audio{
+        grid-column: 3 / 4;
+    }
+    .link-audiodes{
+        grid-column: 4 / 5;
+    }
+    .link-centro{
+        grid-column: 5 / 6;
+    }
+    .link-carte{
+        grid-column: 6 / 7;
+    }
+    .link-media{
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+    .link-rapporti{
+        grid-column: 4 / 5;
+        grid-row: 2 / 3;
+    }
+    .link-opportunita{
+        grid-column: 5 / 6;
+        grid-row: 2 / 3;
+    }
+    .link-condizioni{
+        grid-column: 6 / 7;
+        grid-row: 2 / 3;
+    }
+    .link-privacy{
+        grid-column: 3 / 4;
+        grid-row: 3 / 4;
+    }
+    .link-note{
+        grid-column: 4 / 5;
+        grid-row: 3 / 4;
+    }
+    .link-prefe{
+        grid-column: 5 / 6;
+        grid-row: 3 / 4;
+    }
+    .link-info{
+        grid-column: 6 / 7;
+        grid-row: 3 / 4;
+    }
+    .link-contattaci{
+        grid-column: 3 / 4;
+        grid-row: 4 / 5;
+    }
+    .service-code{
+        margin-left: 25%;
+        margin-top: 2%;        
+    }
+    .footer-social-links{
+        margin-left: 25vw;
+    }
+}
+@media all and (max-width: 799px){
+    .footer-links{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 30px 30px 30px 30px 30px 30px 30px; 
+        gap: 0px 0px;
+        margin-left: 5px;
+    }
+    .link-audio{
+        grid-column: 1 / 2;
+    }
+    .link-audiodes{
+        grid-column: 2 / 3;
+    }
+    .link-centro{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    .link-carte{
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    .link-media{
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+    .link-rapporti{
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+    .link-opportunita{
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+    .link-condizioni{
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+    }
+    .link-privacy{
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+    .link-note{
+        grid-column: 2 / 3;
+        grid-row: 5 / 6;
+    }
+    .link-prefe{
+        grid-column: 1 / 2;
+        grid-row: 6 / 7;
+    }
+    .link-info{
+        grid-column: 2 / 3;
+        grid-row: 6 / 7;
+    }
+    .link-contattaci{
+        grid-column: 1 / 2;
+        grid-row: 7 / 8;
+    }
+    .service-code{
+        margin-top: 2%;
+        margin-left: 5px;
+    }
+    
+}
+.service-code{
+    display: block;    
+    background: 0 0;
+    color: grey;
+    border: solid 1px grey;
+}
+
+a{
+    text-decoration: none;
+}
