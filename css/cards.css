@@ -4,6 +4,7 @@
   margin-top: -15rem;
   overflow-x: hidden;
   padding-top: 2rem;
+  padding-bottom: 15rem;
 }
 
 #cards-section h2 {
@@ -401,6 +402,11 @@ div[class^="card-button"] img:hover {
 
 /* SMARTPHONE MEDIA QUERIES (Portrait and Lanscape) */
 @media (max-width: 767px) {
+
+  #cards-section {
+    padding-bottom: 0;
+  }
+
   .container-cards.classifica,
   .container-cards-title.classifica {
     display: none;
@@ -418,6 +424,11 @@ div[class^="card-button"] img:hover {
 
 /* TABLET MEDIA QUERIES (Portrait) */
 @media (min-width: 768px) and (max-width: 1024px) {
+
+  #cards-section {
+    padding-bottom: 0;
+  }
+
   .container-cards.classifica,
   .container-cards-title.classifica {
     display: none;
@@ -435,6 +446,11 @@ div[class^="card-button"] img:hover {
 
 /* LAPTOP MEDIA QUERIES (Landscape) */
 @media (min-width: 1025px) and (max-width: 1280px) {
+
+  /* #cards-section {
+    padding-bottom: 0;
+  } */
+
   .container-cards.classifica {
     height: 20rem;
   }
