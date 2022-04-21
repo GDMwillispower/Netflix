@@ -18,7 +18,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-html { font-size: 10px; }
+html { font-size: 10px; scroll-behavior: smooth;}
 
 body {overflow-x: hidden; background-color: var(--netflix-bg);}
 

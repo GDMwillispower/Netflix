@@ -13,7 +13,7 @@
 .container-cards {
   width: max-content;
   display: flex;
-  height: 18rem;
+  height: 22rem;
   padding-left: 3%;
   background-image: linear-gradient(
     to bottom,
@@ -42,14 +42,14 @@
 }
 
 .container-cards > :first-child:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
   transition-duration: 500ms;
   z-index: 1;
   transform-origin: left;
 }
 
 .card:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
   transition-duration: 500ms;
   z-index: 1;
 }
@@ -384,4 +384,63 @@ div[class^="card-button"] img:hover {
     margin-top: 0rem;
     padding-top: 8rem;
   }
+}
+
+/* SMARTPHONE MEDIA QUERIES (Portrait and Lanscape) */
+@media (max-width: 767px) {
+
+  .container-cards.classifica,
+  .container-cards-title.classifica {
+    display: none;
+  }
+
+  .container-cards {
+    height: 12rem;
+  }
+
+  .card-header:hover video,
+  .card:hover .card-content {
+    display: none;
+  }
+
+}
+
+/* TABLET MEDIA QUERIES (Portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .container-cards.classifica,
+  .container-cards-title.classifica {
+    display: none;
+  }
+
+  .container-cards {
+    height: 12rem;
+  }
+
+  .card-header:hover video,
+  .card:hover .card-content {
+    display: none;
+  }
+
+}
+
+/* LAPTOP MEDIA QUERIES (Landscape) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  .container-cards.classifica {
+    height: 20rem;
+  }
+
+  .container-cards {
+    height: 15rem;
+  }
+
+  .container-cards > :first-child:hover {
+    transform: scale(1.4);
+  }
+
+  .card:hover {
+    transform: scale(1.4);
+  }
+
 }
