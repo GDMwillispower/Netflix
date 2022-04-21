@@ -28,6 +28,19 @@
   color: #e5e5e5;
 }
 
+.container-cards-title:hover::after {
+  content: "Sfoglia tutti >";
+  font-size: 1.2rem;
+  margin-left: 2rem;
+  opacity: 0.9;
+  align-items: center;
+  animation: details 0.8s forwards;
+}
+
+@keyframes details {
+  0% {margin-left: 0; opacity: 0;}
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -388,7 +401,6 @@ div[class^="card-button"] img:hover {
 
 /* SMARTPHONE MEDIA QUERIES (Portrait and Lanscape) */
 @media (max-width: 767px) {
-
   .container-cards.classifica,
   .container-cards-title.classifica {
     display: none;
@@ -402,12 +414,10 @@ div[class^="card-button"] img:hover {
   .card:hover .card-content {
     display: none;
   }
-
 }
 
 /* TABLET MEDIA QUERIES (Portrait) */
 @media (min-width: 768px) and (max-width: 1024px) {
-
   .container-cards.classifica,
   .container-cards-title.classifica {
     display: none;
@@ -421,12 +431,10 @@ div[class^="card-button"] img:hover {
   .card:hover .card-content {
     display: none;
   }
-
 }
 
 /* LAPTOP MEDIA QUERIES (Landscape) */
 @media (min-width: 1025px) and (max-width: 1280px) {
-
   .container-cards.classifica {
     height: 20rem;
   }
@@ -442,5 +450,4 @@ div[class^="card-button"] img:hover {
   .card:hover {
     transform: scale(1.4);
   }
-
 }
